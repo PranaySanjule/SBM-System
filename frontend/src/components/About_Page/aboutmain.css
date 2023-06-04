@@ -1,0 +1,176 @@
+.about-us {
+  padding: 150px 0px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.about-us h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us h3 {
+  font-size: 22px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+.about-us img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #333;
+  /* background-color: #333; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.links {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.guide-card {
+  margin-top: 12rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  padding: 3rem;
+}
+
+.guide-card h3 {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+.guide-card p {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.guide-card .card1 {
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 2rem;
+}
+
+.team-cards {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12rem;
+  background-color: white;
+}
+.main-cards {
+  display: flex;
+  justify-content: center;
+}
+.main-cards .card1 {
+  background-color: white;
+}
+.main-cards p {
+  text-align: center;
+}
+.team-cards h3 {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+/* 
+.btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+} */
+/* .social-links a{
+    color: black;
+} */
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .flex {
+    max-width: 100%;
+  }
+  .about-us h2 {
+    font-size: 31px;
+  }
+  .about-us p {
+    font-size: 16px;
+  }
+  .social-links a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .team-cards {
+    display: block;
+    margin-top: 12rem;
+    background-color: white;
+  }
+  .main-cards {
+    display: grid;
+  }
+}

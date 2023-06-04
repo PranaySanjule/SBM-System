@@ -1,0 +1,96 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Late:wgh@300;400;700&display=swap");
+
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px honeydew;
+  border-radius: 2px;
+}
+*/
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+  border-radius: 1rem;
+  border: 0.4rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+  background-clip: content-box;
+}
+
+/* Scroll Bar */
+
+/* general styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.text-primary-p {
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-title {
+  color: #2e4a66;
+}
+
+.text-lightblue {
+  color: #469cac;
+}
+
+.text-red {
+  color: #cc3d38;
+}
+
+.text-yellow {
+  color: #a98921;
+}
+
+.dashboard {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar nav nav nav"
+    "sidebar main main main";
+}
+
+@media only screen and (max-width: 978px) {
+  .container-fluid {
+    /* display: grid; */
+    /* height: 100vh; */
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main";
+  }
+}

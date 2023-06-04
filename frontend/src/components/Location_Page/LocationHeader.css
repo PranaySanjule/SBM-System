@@ -1,0 +1,38 @@
+.route {
+  padding: 10rem 2rem;
+  
+}
+
+.location-container {
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.locationItem {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.locationItem button img {
+  width: 20rem;
+  height: 20rem;
+}
+
+@media only screen and (max-width: 1440px){
+  .grid-container{
+    display: inline;
+  }
+}

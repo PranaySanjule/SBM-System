@@ -1,0 +1,14 @@
+[
+  {
+    "route": "route_1",
+    "longitude": "21.004787234623183",
+    "latitude": "79.04771925816755",
+    "address": "Binaki"
+  },
+  {
+    "route": "route_2",
+    "longitude": "21.106630969584923",
+    "latitude": "79.10258566753981",
+    "address": "Binaki new"
+  }
+]

@@ -1,0 +1,544 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Work+Sans:wght@300&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+:root {
+  --bgcolor: rgba(245, 245, 245, 0.811);
+  /* --bgcolor: #f1f5fd; */
+  --primary-color: rgb(4, 4, 55);
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+/* logo style */
+
+/* logo style */
+
+/* ----------------------------------------Navbar CSS Start---------------------------------------- */
+
+.navbar-bg {
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.752); */
+  /* background-color: #ffffffb4; */
+  background-color: rgba(240, 248, 255, 0.797);
+  /* background-color: var(--bgcolor); */
+  padding: 0 10rem;
+  z-index: 1051 !important;
+  position: fixed;
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  color: hotpink;
+  /* width: 50px; */
+  /* height: 50px; */
+}
+
+.main-logo {
+  width: 60px;
+  height: 60px;
+}
+
+/* .navbar-brand,
+img {
+  border: 2px solid black;
+  border-radius: 50%;
+} */
+
+.navbar li {
+  padding: 0 1rem;
+}
+
+.navbar li .nav-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  /* color: white; */
+}
+/* li .nav-link {
+  color: white;
+} */
+
+.navbar li .nav-link:hover {
+  color: hotpink !important;
+}
+
+.navbar ul {
+  margin-right: 6rem;
+}
+
+.btn-style {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: black;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.btn-style:hover {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style:first-child {
+  margin-right: 2rem;
+}
+.btn-style-border {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style-border:hover {
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+/* ----------------------------------------Header CSS Start---------------------------------------- */
+
+.surface {
+  width: 300%;
+  height: 500px;
+  background-color: rgba(2, 180, 251, 0.433);
+  background: url("./images/surface.jpg");
+  background-size: 1000px 500px;
+  background-repeat: repeat;
+  z-index: -3;
+  display: block;
+  position: relative;
+  left: -600px;
+  right: 1000px;
+  animation: moveRight 10s linear infinite;
+  border-bottom: solid white 2px;
+}
+
+.bus1 {
+  position: absolute;
+  top: 355px;
+  left: 15%;
+  animation: suspension 2s linear infinite, moveBus1 15s linear infinite;
+  z-index: 0;
+}
+.bus1 img {
+  width: 300px;
+  height: 150px;
+  /* width: 20%; */
+  transform: rotateY(180deg);
+}
+
+.bus2 {
+  position: absolute;
+  top: 365px;
+  right: 20%;
+  /* transform: scaleX(-1); */
+  animation: suspension 2s linear infinite, moveBus2 15s linear infinite;
+  z-index: 0;
+}
+.bus2 img {
+  width: 300px;
+  height: 150px;
+  /* width: 20%; */
+}
+
+/* Header Animation */
+@keyframes moveRight {
+  100% {
+    transform: translateX(520px);
+  }
+}
+
+.second-half {
+  /* background-color: aliceblue; */
+  background-color: rgb(218, 232, 244);
+  width: 100%;
+  text-align: center;
+  padding: 4rem;
+  font-weight: 500;
+  font-size: medium;
+
+  /* overflow-x: hidden; */
+}
+.second-half h1 {
+  overflow-y: hidden;
+  font-size: xx-large;
+}
+.main-data {
+  margin-top: 0;
+}
+.explore {
+  width: 12rem;
+  height: 5rem;
+  border-radius: solid white 2px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 3rem;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.explore:hover {
+  color: black;
+  background-color: white;
+}
+/* ----------------------------------------Route Animation CSS---------------------------------------- */
+.bus-animation {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* padding: 1rem; */
+  /* border: solid white 4px; */
+}
+
+#bg-video {
+  /* opacity: 0.8; */
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: solid black 2px; */
+  /* border-radius: 50px; */
+}
+
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
+/* ----------------------------------------Route Animation CSS---------------------------------------- */
+
+/* ----------------------------------------Footer CSS---------------------------------------- */
+/* .footer {
+  background-color: rgb(4, 4, 55);
+  color: white;
+  font-size: medium;
+  border-top: solid white 2px;
+  overflow-x: hidden;
+} */
+footer {
+  padding: 4rem;
+}
+.section {
+  color: white;
+  font-size: medium;
+  text-align: left;
+  left: 400;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.section li {
+  list-style: none;
+}
+h1 u {
+  color: white;
+}
+.address {
+  /* padding-top: 4rem; */
+  /* padding-left: 4rem; */
+  font-size: large;
+}
+.divider {
+  margin-top: 4rem;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+.copyright {
+  display: flex;
+  font-size: medium;
+  text-align: left;
+  color: white;
+}
+.sbm {
+  font-size: large;
+}
+.social {
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+/* .socials {
+  margin-left: 29.5rem;
+} */
+/* ----------------------------------------Footer CSS---------------------------------------- */
+
+/* ----------------------------------------Modal CSS---------------------------------------- */
+.signup-page {
+  background-color: skyblue;
+  width: 100%;
+  height: 100%;
+}
+.login-page {
+  background-color: skyblue;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.cont {
+  font-size: medium;
+  padding: 5rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.signup-card {
+  border: 1.5px solid #dadadf;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  height: 60rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  overflow-y: hidden;
+  width: 45rem;
+}
+.route-dropdown {
+  height: 4rem;
+}
+.route-dropdown option {
+  font-size: medium;
+}
+.modal-btn .btn {
+  height: 4rem;
+  width: 20rem;
+  font-weight: 500;
+  font-size: small;
+  margin: auto;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.input-field {
+  height: 4rem;
+  width: 50rem;
+  font-size: small;
+  overflow: hidden;
+}
+.password,
+.confirm-password {
+  display: flex;
+}
+.login-card {
+  margin-top: 10rem;
+  border: 1.5px solid #dadadf;
+  border-radius: 1rem;
+  height: 35rem;
+  padding: 2rem;
+  margin-bottom: 8rem;
+  height: 45rem;
+  width: 45rem;
+
+  /* overflow: hidden; */
+}
+
+/* ----------------------------------------Modal CSS---------------------------------------- */
+/* ----------------------------------------Signup Modal CSS---------------------------------------- */
+
+.banner img {
+  width: 80%;
+  height: 10%;
+}
+
+/* ----------------------------------------Signup Modal CSS---------------------------------------- */
+/* ----------------------------------------Removepage CSS---------------------------------------- */
+/* .cross-icon {
+  text-align: right;
+}
+.cross-icon img {
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+} */
+
+/* ----------------------------------------Removepage CSS---------------------------------------- */
+
+/* About Page Css */
+
+/* About Page Css */
+
+/* Contact Page Css */
+
+.contact-container {
+  background: rgba(135, 207, 235, 0.76);
+}
+.contact-content {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 100px;
+  width: 80%;
+  background: white;
+  border: solid black 2px;
+  border-radius: 1%;
+  display: flex;
+  padding: 40px;
+}
+.driver-content {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+  background: white;
+  border: solid black 2px;
+  border-radius: 1%;
+  display: flex;
+  padding: 20px;
+}
+.team {
+  padding: 40px;
+  margin-bottom: 15px;
+}
+
+/* Contact Page Css */
+
+/* Location Container */
+
+.location-cont {
+  width: 50rem;
+  height: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Location Container */
+
+.check-forgot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.create-acc {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  /* margin-right: auto; */
+}
+.already-signup {
+  margin-top: 1rem;
+  margin-left: 6rem;
+  /* margin-right: auto; */
+}
+
+.dont-signup {
+  font-weight: 600;
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.already-login {
+  font-weight: 600;
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* ----------------------------------------Responsive Media queries---------------------------------------- */
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .bus1 {
+    position: absolute;
+    top: 375px;
+    left: 5%;
+  }
+
+  .bus1 img {
+    width: 250px;
+    height: 120px;
+  }
+
+  .bus2 {
+    position: absolute;
+    top: 382px;
+    right: 5%;
+  }
+  .bus2 img {
+    width: 250px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .bus1 {
+    position: absolute;
+    top: 375px;
+    left: 5%;
+  }
+
+  .bus1 img {
+    width: 0px;
+    height: 0px;
+  }
+
+  .bus2 {
+    position: absolute;
+    top: 382px;
+    left: 15%;
+  }
+  .bus2 img {
+    width: 250px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar-collapse {
+    margin: 0;
+  }
+}

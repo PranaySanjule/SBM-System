@@ -1,0 +1,12 @@
+main {
+  background: #f3f4f6;
+  grid-area: main;
+}
+
+.main__container {
+  margin: auto;
+}
+
+.loc_div {
+  margin-bottom: 5rem;
+}

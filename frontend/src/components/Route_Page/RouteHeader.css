@@ -1,0 +1,42 @@
+.route {
+  padding: 10rem 2rem;
+}
+
+.route-container {
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.routeItem {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.routeItem button img {
+  width: 30rem;
+  height: 15rem;
+}
+
+@media only screen and (max-width: 890px) {
+  /* .route-containe {
+    display: grid;
+
+  } */
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+}

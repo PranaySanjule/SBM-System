@@ -1,0 +1,116 @@
+.contact-us {
+  padding: 150px 0px;
+  background-color: skyblue;
+}
+
+.contact-container {
+  display: block;
+  text-align: left;
+}
+
+.inner-cont {
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: large;
+  height: 30rem;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .inner-cont {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 40rem;
+} */
+/* .contact_firsthalf {
+  margin-top: 5rem;
+  width: 50%;
+  text-align: left;
+  font-size: large;
+  height: 35rem;
+  padding-top: 5rem;
+  padding-left: 15rem;
+  background-color: aliceblue;
+} */
+/* .contact_firsthalf h1 {
+  font-size: 35px;
+  font-weight: 700;
+} */
+/* .contact_secondhalf {
+  padding-top: 5rem;
+  padding-left: 15rem;
+  margin-top: 5rem;
+  width: 50%;
+  font-size: large;
+  text-align: left;
+  background-color: aliceblue;
+} */
+/* .contact_secondhalf h1 {
+  font-size: 35px;
+  font-weight: 700;
+} */
+
+.driverhead {
+  align-items: center;
+}
+
+.diversDetails {
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border: 2px solid white;
+  padding: 2rem;
+  justify-content: center;
+  font-size: large;
+}
+hr {
+  height: 4px;
+  /* color: black; */
+  border: none;
+  background-color: black;
+}
+
+.driver {
+  margin: 1rem;
+}
+
+.driver-cont {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: azure;
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .diversDetails {
+    display: inline;
+  }
+}
+
+
+@media only screen and (max-width: 530px) {
+  .contact-container {
+    display: block;
+    text-align: left;
+  }
+
+  .inner-cont {
+    padding: 5rem;
+    font-size: large;
+    height: 45rem;
+    background-color: whitesmoke;
+    display: list-item;
+  }
+
+}

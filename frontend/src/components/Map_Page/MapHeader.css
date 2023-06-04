@@ -1,0 +1,38 @@
+/* .route {
+  padding: 10rem 2rem;
+  
+} */
+
+.map-container {
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map-responsive {
+  align-items: end;
+  justify-content: end;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding-bottom: 56.25%;
+}
+.map {
+  margin-left: 200rem;
+}
+.marker {
+  width: 1rem;
+  height: 1rem;
+}
+.map-cont {
+  max-width: 100%;
+}
+
+@media only screen and (width: 1590px) {
+  .map {
+    width: 80rem;
+  }
+}
